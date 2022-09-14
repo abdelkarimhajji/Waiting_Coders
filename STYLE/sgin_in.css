@@ -35,7 +35,9 @@
     padding: 0;
     margin: 0;
 }
-body{overflow-x: hidden; position: relative; width: 100%;}
+body{
+    overflow-x:hidden;
+}
 .all
 {
     width: 100%;
@@ -95,6 +97,7 @@ input
     font-weight:400;
     transition:  0.5s;
 }
+
 .form input:focus
 {
     border: 2px solid rgb(0, 186, 188);
@@ -159,6 +162,11 @@ margin-top: 5%;
 cursor: pointer;
 font-family: "FiraCode";
 font-weight:normal;
+}
+.for_help a
+{
+    text-decoration: none;
+    color: #ffffff  ;
 }
  /* finsh style of div form */
  @media  (max-width: 500px)

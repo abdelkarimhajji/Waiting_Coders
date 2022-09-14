@@ -170,6 +170,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-top: 14%;
     width: 40px;
 }
+.nav_empty a
+{
+    text-decoration: none;
+    color: #292d39;
+}
 /* finish style nav emty */
 
 /* Begin container_level */
