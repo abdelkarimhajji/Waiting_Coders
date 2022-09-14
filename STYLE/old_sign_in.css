@@ -1,0 +1,217 @@
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Medium.ttf) format("truetype");
+    /* font Medium */
+    font-weight: 500;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-SemiBold.ttf) format("truetype");
+    /* font Semi Bold */
+    font-weight: 600;
+}
+*
+{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* begin smaal screen */
+#error
+{
+    display: none;
+}
+/* finish smaal screen */
+#container {
+    position: relative
+}
+
+#particles-js
+{
+    /* background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)),rgb(0, 186, 188); */
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgb(0, 186, 188)),url(../IMAGES/1254485.png);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+/* style div of form */
+
+.form_inscription
+{
+    width:100px;
+    height: 500px;
+    background-color: white;
+    display: inline-block;
+}
+#your-div {
+    position: absolute;
+    /* top: 110px; */
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, 0.1), rgb(0, 0, 0,0.6));
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition:  0.5s;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 12px); }
+    100%   { transform: translate(0, -0px); }   
+}
+#your-div h1
+{
+    text-align: center;
+    margin-top: 20%;
+    background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 186, 188),rgb(249, 249, 249));
+    background-clip: text ;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    font-family: "FiraCode";
+    font-weight: bold;
+    transition:  0.5s;
+}
+#your-div input
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 72%;
+    height: 45px;
+    border: 2px solid rgb(244, 244, 244);
+    padding-left: 3%; 
+    font-size: 15px;
+    background-color: #f8f8f8;
+    transition: all 0.8ms;
+    color: #2A2A2A;
+    font-family: "FiraCode";
+    font-weight:400;
+    transition:  0.5s;
+}
+#your-div input:focus
+{
+    border: 2px solid rgb(0, 186, 188);
+    outline: rgb(0, 186, 188);
+
+}
+#your-div input[type = submit]
+{
+    background: rgb(0, 186, 188);
+    border: 1px solid rgb(0, 186, 188);
+    color: white;
+    font-family: "FiraCode";
+    font-weight: 700;
+    margin-top: 8%;
+    cursor: pointer;
+    transition: 1s;
+}
+#your-div input[type = submit]:hover
+{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0,0.1));
+    color: #d3d3d3;
+}
+#your-div form
+{
+    margin-top: 13%;
+    color: #2A2A2A;
+}
+/* begin placeholder */
+::placeholder {
+    text-align: center;
+    color: #2A2A2A; 
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+text-align: center;
+color: #2A2A2A;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+text-align: center; 
+color: #2A2A2A; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+text-align: center;  
+color: #2A2A2A;
+}
+
+:-ms-input-placeholder {  
+text-align: center; 
+color: #2A2A2A;
+}
+/* finish place holder */
+.for_help
+{
+text-align: center;
+color: white;
+margin-top: 5%;
+cursor: pointer;
+font-family: "FiraCode";
+font-weight:normal;
+}
+ /* finsh style of div form */
+
+@media  (max-width: 600px)
+    {
+    #your-div
+    {
+        width: 100%;
+        height: 460px;
+    }
+    #your-div h1
+    {
+        font-size: 40px;
+        margin-top:70px;
+    }
+    #your-div input
+    {
+        width: 62%;
+        height: 40px;
+    }
+    .for_help
+    {
+        font-size: 15px;
+    }
+    
+    }
+/*  */

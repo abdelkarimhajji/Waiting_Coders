@@ -1,0 +1,417 @@
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Medium.ttf) format("truetype");
+    /* font Medium */
+    font-weight: 500;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-SemiBold.ttf) format("truetype");
+    /* font Semi Bold */
+    font-weight: 600;
+}
+::placeholder {
+font-size: 14.5px;
+color: #2A2A2A; 
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+font-size: 14.5px;
+color: #2A2A2A;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+font-size: 14.5px; 
+color: #2A2A2A; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+font-size: 14.5px;  
+color: #2A2A2A;
+}
+
+:-ms-input-placeholder {  
+font-size: 14.5px; 
+color: #2A2A2A;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#all_container
+{
+    display: flex;
+}
+#fixed_nav
+{
+        width: 84px;
+}
+#container
+{
+    width: 100%;
+    height: 100vh;
+}
+#navbar
+{
+    width: 280px;
+    height: 100vh;
+    background-color:#292d39;
+    position: absolute;
+    left:-200px;
+    display: block;
+    z-index: 5;
+}
+h1
+{
+    font-family: "FiraCode";
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 79%;
+}
+#navbar_2
+{
+    display: none;
+}
+#navbar_2 img
+{
+    display: none;
+}
+/* Begin style nav empty */
+.nav_empty
+{
+    width: 100%;
+    height: 63px;
+    background-color: white;
+    display: flex;
+}
+.nav_empty_0
+{
+    display: none;
+}
+.nav_empty_1
+{
+    background-color: #ffffff;
+    width: 78%;
+    position: relative;
+}
+.nav_empty_1 input
+{
+    position: absolute;
+    border: 0px solid black;
+    height: 100%;
+    width: 100%;
+    padding-left:75px;
+    font-family: "FiraCode";
+    font-size: 15px;
+    background-image: url(../IMAGES/search-icon.ico);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 20px 10px;
+}
+/* Begin clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+/* finish  */
+.nav_empty_1 input:focus
+{
+    outline: 0;
+}
+.nav_empty_2
+{
+    background-color: #ffffff;
+    width: 15%;
+    text-align: center;
+    padding: 1.1em;
+    font-family: "FiraCode";
+    font-size: 17px;
+    font-weight:lighter;
+    color: #292d39;
+    cursor: pointer;
+}
+.nav_empty_3
+{
+    background-color: #ffffff;
+    width: 7%;
+    cursor: pointer;
+}
+.nav_empty_3 img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-top: 14%;
+    width: 40px;
+}
+/* finish style nav emty */
+
+/* Begin container_level */
+.container_level
+{
+    width: 100%;
+    height:   300px;
+    /* background-color: #292d39; */
+    background-image:linear-gradient(90deg, rgb(0, 0, 0, 0.4), rgb(0, 0, 0,0.4)), url(../IMAGES/binary_level.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.level
+{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(32,32,38,0.85);
+    position: absolute;
+}
+.profile_student
+{
+    display: none;
+}
+.name_progress
+{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 35px;
+    
+}
+.name_progress select
+{
+    /* width: 20vw; */
+    height: 5vh;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-family: "FiraCode";
+    font-size:17px;
+    border: none;
+    transition: 0.8s all;
+}
+.name_progress select:hover
+{
+    background-color: #292d39;
+    
+}
+.name_progress select option
+{
+    border: 1px solid black;
+    height: 100px;
+    background-color: #292d39;
+}
+.name_progress select option:hover
+{
+    background-color: #0a267c;
+}
+
+.name_progress select:focus
+{
+    outline: none;
+}
+.name_specific
+{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+.name_specific select
+{
+    width: 200px;
+    height: 5vh;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-family: "FiraCode";
+    font-size:17px;
+    border: none;
+    transition: 0.8s all;
+}
+.name_specific select:hover
+{
+    background-color: #292d39;
+    
+}
+.name_specific select option
+{
+    border: 1px solid black;
+    height: 100px;
+    background-color: #292d39;
+}
+.name_specific select option:hover
+{
+    background-color: #0a267c;
+}
+
+.name_specific select:focus
+{
+    outline: none;
+}
+/* Begin progresse */
+.progress_level
+{
+    width: 80%;
+    /* height: 20%; */
+    /* background-color: rgb(198, 126, 19); */
+    margin: 0 auto;
+    padding-top:25px;
+}
+#progress{
+    width: 100%;
+    height: 38px;
+    border-radius: 5%;
+    margin: 0 auto;
+    text-align:center;
+    display:block;
+    position:relative;
+    margin: 0 auto;
+    font-family: "FiraCode";
+    font-weight: lighter;
+}
+#progress:before {
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+    right:0;
+    top: 8.5px;
+    color: white;
+}
+#progress::-webkit-progress-bar {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, 0.1), rgb(0, 0, 0,0.1));
+    border-radius: 5px;
+/* style rules */
+}
+#progress::-webkit-progress-value {
+    border-radius: 5px  0  0 5px;
+    background-color: rgb(0, 186, 188);
+/* style rules */
+}
+
+/* finsh progress */
+    @media  (max-width: 767px)
+    {
+        .profile_student
+        {
+            display: block;
+            /* background-color: #0a267c; */
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 2vh;
+        }
+        .profile_student img
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .nav_empty_0
+        {
+            display: block;
+            padding: 40px;
+            position: relative;
+            background-color: #292d39;
+            cursor: pointer;
+        }
+        .nav_empty_0 h2
+        {
+            color: #ffffff;
+            font-family: "FiraCode";
+            font-weight: bold;
+            font-size: 32px;
+            position: absolute;
+            left: 22px;
+            bottom: 28px;
+        }
+        .nav_empty_3
+        {
+            display: none;
+        }
+        .nav_empty_2
+        {
+            width: 40%;
+            padding: 2.9%;
+        }
+        /*dsiplay none of backround image */
+        .container_level
+        {
+            background-image: none;
+            background-color: #202026;
+            height: 490px;
+        }
+        .level
+        {
+            width: 100%;
+            background-color: rgba(32,32,38,0.85);
+            position: absolute;
+        }
+        #fixed_nav
+        {
+            display: none;
+        }
+        #navbar
+        {
+            display: none;
+        }
+        #navbar_2
+        {
+            width: 100%;
+            height: 100vh;
+            background-color:#292d39;
+            position: absolute;
+            left:-100%;
+            display: block;
+            z-index: 5;
+        }
+        #navbar_2 img
+        {
+            width: 50px;
+            position: absolute;
+            left: 83%;
+            top: 2%;
+            cursor: pointer;
+            display: block;
+        }
+        
+    }
+    @media  (max-width: 282px)
+    {
+        #navbar_2 img
+        {
+            width: 50px;
+            position: absolute;
+            left: 78%;
+            top: 2%;
+            cursor: pointer;
+            display: block;
+        }
+    }
