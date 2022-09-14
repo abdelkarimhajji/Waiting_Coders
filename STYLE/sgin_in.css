@@ -35,6 +35,7 @@
     padding: 0;
     margin: 0;
 }
+body{overflow-x: hidden; position: relative; width: 100%;}
 .all
 {
     width: 100%;
