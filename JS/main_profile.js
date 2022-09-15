@@ -4,7 +4,6 @@ var navbar_2 = document.getElementById("navbar_2");
 var your_div      = document.getElementsByClassName("level")[0]; 
 var container     = document.getElementsByClassName("container_level")[0];
 // Begin script of profile
-
 function burger()
 {
             if(valid == 1)
@@ -26,6 +25,7 @@ function burger_2()
             {
                 navbar_2.style.left = "0px";
                 navbar_2.style.transition =   "0.8s";
+                navbar_2.style.position = "fixed";
                 valid = 0;
             }
             else
@@ -59,5 +59,4 @@ window.addEventListener('resize', Myfunction);
 
 
 // finsh
-
-// 
+;
