@@ -197,12 +197,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .container_level
 {
     width: 100%;
-    height:   300px;
+    height:300px;
     /* background-color: #292d39; */
     background-image:linear-gradient(90deg, rgb(0, 0, 0, 0.4), rgb(0, 0, 0,0.4)), url(../IMAGES/binary_level.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .level
 {
@@ -382,15 +384,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .names_languages
 {
-    width: 100%;
+    width:100%;
     height: 342px;
-    overflow: scroll;
     z-index: 55;
 }
 .names_languages p
 {
-    /* width: 100%; */
-    /* height: 30px; */
     background-color: #ffffff;
     padding: 20px;
     box-sizing: border-box;
@@ -433,7 +432,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 100%;
     height: 342px;
-    overflow: scroll;
     z-index: 55;
 }
 .names_projects p
@@ -569,9 +567,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         {
             width: 50px;
             position: absolute;
-            left: 78%;
+            left: 72%;
             top: 2%;
             cursor: pointer;
             display: block;
+        }
+        .container_level
+        {
+            width: 282px;
+        }
+        .projects
+        {
+            width: 282px;
+        }
+        .languges
+        {
+            width: 282px;
         }
     }
