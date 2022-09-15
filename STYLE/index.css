@@ -362,7 +362,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 47%;
     height: 400px;
-    background-color: #2a3f78;
+    background-color: #ffffff;
     box-sizing: border-box;
 }
 .title_langauges
@@ -408,7 +408,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 47%;
     height: 400px;
-    background-color: #501717;
+    background-color: #ffffff;
     margin-left: 2%;
     box-sizing: border-box;
 }
@@ -557,6 +557,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         }
         .projects
         {
+            background-color: #ffffff;
             margin-top: 40px;
             width: 90%;
         }
