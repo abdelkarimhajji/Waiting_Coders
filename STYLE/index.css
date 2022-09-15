@@ -367,7 +367,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 100%;
     box-sizing: border-box;
-    padding: 23px;
+    padding: 20px;
     text-align: center;
     color: #292d39;
     cursor: pointer;
@@ -417,7 +417,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 100%;
     box-sizing: border-box;
-    padding: 23px;
+    padding: 20px;
     text-align: center;
     color: #292d39;
     cursor: pointer;
