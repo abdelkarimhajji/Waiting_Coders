@@ -363,7 +363,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 47%;
     height: 400px;
     background-color: #ffffff;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 .title_langauges
 {
@@ -373,7 +373,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
     color: #292d39;
     cursor: pointer;
-    /* background-color:#292d39; */
     transition: 1s;
 }
 .title_langauges p
@@ -411,6 +410,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 400px;
     background-color: #ffffff;
     margin-left: 2%;
+    box-sizing: border-box;
 }
 .title_projects
 {
@@ -551,7 +551,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         .languges
         {
             width: 90%;
-            height: 400px;
+            height: 300px;
             background-color: #ffffff;
             box-sizing: border-box;
         }
