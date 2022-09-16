@@ -675,6 +675,28 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         {
             margin-top: 100px;
         }
+        .item_menu_student
+        {
+            /* background-color: white; */
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .name_item_student i
+        {
+            color: #ffffff;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .name_item_student p
+        {
+            display: inline-block;
+            font-family: "FiraCode";
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
         /* Begin responcive Established */
         .all_Established
         {
