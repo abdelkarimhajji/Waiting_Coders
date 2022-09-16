@@ -370,7 +370,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    text-align: center;
     color: #292d39;
     cursor: pointer;
     transition: 1s;
@@ -380,12 +379,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-family: "FiraCode";
     font-size: 20px;
     font-weight:bold;
+    margin-left: 50px;
+}
+.title_langauges i
+{
+    font-size: 20px;
+    color:rgb(0, 186, 188);
 }
 .names_languages
 {
     width:100%;
     height: 342px;
-    z-index: 55;
+    position: relative;
 }
 .names_languages p
 {
@@ -404,6 +409,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: #f5f5f5;
     color: black;
 }
+.names_languages i
+{
+    color: rgb(0, 186, 188);
+    position: absolute;
+    left: 90%;
+    font-size: 18px;
+}
 .projects
 {
     width: 47%;
@@ -417,7 +429,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    text-align: center;
     color: #292d39;
     cursor: pointer;
     transition: 1s;
@@ -427,12 +438,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-family: "FiraCode";
     font-size: 20px;
     font-weight:bold;
+    margin-left: 50px;
+}
+.title_projects i
+{
+    font-size: 20px;
+    color:rgb(0, 186, 188);
 }
 .names_projects
 {
     width: 100%;
     height: 342px;
-    z-index: 55;
+    position: relative;
 }
 .names_projects p
 {
@@ -451,7 +468,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: #f5f5f5;
     color: black;
 }
+.names_projects i
+{
+    color: rgb(0, 186, 188);
+    font-size: 18px;
+    position: absolute;
+    left: 90%;
+}
+/* Begin tools */
 
+.contain_tools
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools
+{
+    width: 80%;
+    height: 340px;
+    background-color: white;
+}
+.title_tools
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #292d39;
+    cursor: pointer;
+    transition: 1s;
+}
+.title_tools p
+{
+    font-family: "FiraCode";
+    font-size: 20px;
+    font-weight:bold;
+    margin-left: 50px;
+}
+.title_tools i
+{
+    font-size: 20px;
+    color:rgb(0, 186, 188);
+}
 /* Finish all_Established */
     @media  (max-width: 767px)
     {
@@ -560,6 +620,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             background-color: #ffffff;
             margin-top: 40px;
             width: 90%;
+        }
+        .tools
+        {
+            width: 90%;
+            height: 340px;
+            background-color: white;
         }
     }
     @media  (max-width: 282px)
