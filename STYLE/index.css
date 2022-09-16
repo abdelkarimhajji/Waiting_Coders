@@ -95,16 +95,17 @@ color: #2A2A2A;
 }
 #navbar
 {
-    width: 280px;
+    width: 320px;
     height: 100%;
     background-color:#292d39;
     position: absolute;
-    left:-200px;
+    left:-240px;
     display: block;
     z-index: 5;
     position: fixed;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 h1
 {
     font-family: "FiraCode";
@@ -112,7 +113,70 @@ h1
     color: #ffffff;
     cursor: pointer;
     margin-top: 3%;
-    margin-left: 79%;
+    margin-left: 81.5%;
+}
+#navbar .name_student
+{
+    color: #ffffff;
+    font-family: "FiraCode";
+    font-size: large;
+    padding: 25px;
+    padding-top: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+#navbar .arrow
+{
+    color: #ffffff;
+    font-size: large;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.all_menu
+{
+    width: 100%;
+    height: auto;
+}
+
+.item_menu
+{
+    box-sizing: border-box;
+    padding-left: 25px;
+    height: 80px;
+    /* transition: 0.1s; */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+.item_menu:hover
+{
+    background-color:#202026;
+}
+.item_menu p
+{
+    font-family: "FiraCode";
+    font-size: 16.5px;
+    color: #ffffff;
+    display: inline-block;
+}
+.name_item
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.icon_item
+{
+    width: 30%;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_item i
+{
+    color: white;
+    font-size: 23px;
 }
 #navbar_2
 {
@@ -168,19 +232,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     background-color: #ffffff;
     width: 15%;
-    text-align: center;
-    padding: 1.1em;
     font-family: "FiraCode";
     font-size: 17px;
     font-weight:lighter;
+    text-align: center;
     color: #292d39;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav_empty_3
 {
     background-color: #ffffff;
     width: 7%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav_empty_3 img
 {
@@ -188,7 +257,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    margin-top: 14%;
     width: 40px;
 }
 /* finish style nav emty */
@@ -198,13 +266,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     width: 100%;
     height:300px;
-    /* background-color: #292d39; */
     background-image:linear-gradient(90deg, rgb(0, 0, 0, 0.4), rgb(0, 0, 0,0.4)), url(../IMAGES/binary_level.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .level
 {
@@ -223,14 +291,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 50px;
     margin: 0 auto;
     margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .name_progress select
 {
-    /* width: 20vw; */
     height: 5vh;
     display: block;
-    margin: 0 auto;
     text-align: center;
     background-color: transparent;
     color: white;
@@ -264,13 +333,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 80%;
     height: 50px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .name_specific select
 {
     width: 200px;
     height: 5vh;
     display: block;
-    margin: 0 auto;
     text-align: center;
     background-color: transparent;
     color: white;
@@ -523,6 +594,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             height: 200px;
             margin: 0 auto;
             margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .profile_student img
         {
@@ -597,6 +671,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             cursor: pointer;
             display: block;
         }
+        .all_menu
+        {
+            margin-top: 100px;
+        }
         /* Begin responcive Established */
         .all_Established
         {
@@ -626,6 +704,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             background-color: #ffffff;
             margin-top: 40px;
             width: 90%;
+            height: 400px;
+            margin-left: 0%;
         }
         .tools
         {

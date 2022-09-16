@@ -3,6 +3,10 @@ var navbar = document.getElementById("navbar");
 var navbar_2 = document.getElementById("navbar_2");
 var your_div      = document.getElementsByClassName("level")[0]; 
 var container     = document.getElementsByClassName("container_level")[0];
+var icon_item = document.getElementById("icon_item");
+var css = '.icon_item:hover{ background-image: linear-gradient(350deg,rgb(0, 0, 0,0.1),rgb(0, 186, 188)); }';
+var css_2 = '.icon_item:hover{ background-image: linear-gradient(#202026,#202026);}';
+var style = document.createElement('style');
 // Begin script of profile
 function burger()
 {
@@ -10,12 +14,26 @@ function burger()
             {
                 navbar.style.left = "0px";
                 navbar.style.transition =   "0.8s";
+                if (style.styleSheet) {
+                    style.styleSheet.cssText = css_2;
+                } else {
+                    style.appendChild(document.createTextNode(css_2));
+                }
+                
+                document.getElementsByTagName('head')[0].appendChild(style);
                 valid = 0;
             }
             else
             {
-                navbar.style.left = "-200px";
+                navbar.style.left = "-240px";
                 navbar.style.transition =   "0.8s";
+                if (style.styleSheet) {
+                    style.styleSheet.cssText = css;
+                } else {
+                    style.appendChild(document.createTextNode(css));
+                }
+                
+                document.getElementsByTagName('head')[0].appendChild(style);
                 valid = 1;
             }
 }
@@ -59,4 +77,12 @@ window.addEventListener('resize', Myfunction);
 
 
 // finsh
-;
+// create hover icone_items
+
+    if (style.styleSheet) {
+        style.styleSheet.cssText = css;
+    } else {
+        style.appendChild(document.createTextNode(css));
+    }
+    
+    document.getElementsByTagName('head')[0].appendChild(style);
