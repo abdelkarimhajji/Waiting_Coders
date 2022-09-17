@@ -7,6 +7,14 @@ var icon_item = document.getElementById("icon_item");
 var css = '.icon_item:hover{ background-image: linear-gradient(350deg,rgb(0, 0, 0,0.1),rgb(0, 186, 188)); }';
 var css_2 = '.icon_item:hover{ background-image: linear-gradient(#202026,#202026);}';
 var style = document.createElement('style');
+
+if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+} else {
+    style.appendChild(document.createTextNode(css));
+}
+
+document.getElementsByTagName('head')[0].appendChild(style);
 // Begin script of profile
 function burger()
 {
@@ -79,10 +87,3 @@ window.addEventListener('resize', Myfunction);
 // finsh
 // create hover icone_items
 
-    if (style.styleSheet) {
-        style.styleSheet.cssText = css;
-    } else {
-        style.appendChild(document.createTextNode(css));
-    }
-    
-    document.getElementsByTagName('head')[0].appendChild(style);

@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Medium.ttf) format("truetype");
+    /* font Medium */
+    font-weight: 500;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "FiraCode";
+    src: url(fonts/FiraCode-SemiBold.ttf) format("truetype");
+    /* font Semi Bold */
+    font-weight: 600;
+}
+.cover
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover div
+{
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    background-color: #e9e9eb;
+}
+.page_languges
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9eb;
+}
+
+.enter_languages
+{
+    width: 85%;
+    height: 800px;
+    background-color: #ffffff;
+}
