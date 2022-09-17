@@ -589,12 +589,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .all_footer
 {
     background-color:#f5f5f5 ;
+    border-top: 2px solid rgb(0, 186, 188);
+    width: 100%;
 }
 .footer
 {
     width: 100%;
     color: rgb(0, 186, 188);
-    border-top: 2px solid rgb(0, 186, 188);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -814,6 +815,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         .footer
         {
             flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
         }
         .names_footer_1
         {
