@@ -75,6 +75,11 @@ color: #2A2A2A;
 font-size: 14.5px; 
 color: #2A2A2A;
 }
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
 *
 {
     text-decoration: none !important ;
