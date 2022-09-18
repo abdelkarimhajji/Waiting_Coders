@@ -451,6 +451,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #292d39;
     cursor: pointer;
     transition: 1s;
+    position: relative;
 }
 .title_langauges p
 {
@@ -463,6 +464,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     font-size: 20px;
     color:rgb(0, 186, 188);
+}
+.title_langauges .caret
+{
+    position: absolute;
+    left: 90%;
+    font-size: 22px;
 }
 .names_languages
 {
@@ -509,6 +516,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 20px;
     color: #292d39;
     cursor: pointer;
+    position: relative;
     transition: 1s;
 }
 .title_projects p
@@ -522,6 +530,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     font-size: 20px;
     color:rgb(0, 186, 188);
+}
+.title_projects .caret
+{
+    position: absolute;
+    font-size: 22px;
+    left: 90%;
 }
 .names_projects
 {
@@ -576,6 +590,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 20px;
     color: #292d39;
     cursor: pointer;
+    position: relative;
     transition: 1s;
 }
 .title_tools p
@@ -589,6 +604,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 {
     font-size: 20px;
     color:rgb(0, 186, 188);
+}
+.title_tools .caret
+{
+    position: absolute;
+    font-size: 22px;
+    left: 90%;
 }
 /* Finish all_Established */
 

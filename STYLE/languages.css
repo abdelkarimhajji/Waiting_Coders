@@ -61,3 +61,79 @@
     height: 800px;
     background-color: #ffffff;
 }
+.name_languages
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.name_languages i
+{
+    color: rgb(0, 186, 188);
+    margin-left: 20px;
+}
+.name_languages p
+{
+    font-family: "FiraCode";
+    color:#292d39;
+    font-size: 17px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.name_languages .caret
+{
+    position: absolute;
+    left: 90%;
+    font-size: 22px;
+}
+.all_details
+{
+    display: flex;
+}
+.next_details
+{
+    width: 20%;
+    height: 100px;
+    background-color: red;
+}
+details
+{
+    transition: height 1s ease;
+    overflow: hidden;
+    font-family: "FiraCode";
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    padding-left: 26px;
+    width: 92%;
+    display: inline;
+    background-color: #e9e9eb;
+}
+
+details:not([open])
+{
+    height: 1.25em;
+    display: inline;
+}
+
+details[open]
+{
+    height: 8.50em;
+    display: inline;
+}
+details p
+{
+    margin-top: 20px;
+    color: #292d39;
+    text-align: justify;
+}
+@media  (max-width: 582px)
+{
+    .name_languages .caret
+{
+    position: absolute;
+    left: 80%;
+    font-size: 22px;
+}
+}

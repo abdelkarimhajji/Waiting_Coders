@@ -8,6 +8,7 @@ var css = '.icon_item:hover{ background-image: linear-gradient(350deg,rgb(0, 0, 
 var css_2 = '.icon_item:hover{ background-image: linear-gradient(#202026,#202026);}';
 var style = document.createElement('style');
 
+
 if (style.styleSheet) {
     style.styleSheet.cssText = css;
 } else {
