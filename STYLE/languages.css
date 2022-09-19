@@ -48,7 +48,7 @@
 .page_languges
 {
     width: 100%;
-    height: auto;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,16 +58,20 @@
 .enter_languages
 {
     width: 85%;
-    height: 800px;
+    height: 1000px;  
     background-color: #ffffff;
 }
 .name_languages
 {
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     position: relative;
+    background-color: #292d39;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .name_languages i
 {
@@ -77,7 +81,7 @@
 .name_languages p
 {
     font-family: "FiraCode";
-    color:#292d39;
+    color:#ffffff;
     font-size: 17px;
     margin-left: 30px;
     cursor: pointer;
@@ -85,55 +89,176 @@
 .name_languages .caret
 {
     position: absolute;
-    left: 90%;
+    left: 93%;
     font-size: 22px;
 }
-.all_details
+.much_languages
+{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.explaine_language 
+{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.explaine_language:hover
+{
+    background-color: #f2f2f4;
+}
+.much_languages p
+{
+    width: 92%;
+    font-family: "FiraCode";
+    color:#292d39;
+    text-align: justify;
+}
+.much_languages summary
+{
+    font-family: "FiraCode";
+    color:#292d39;
+    position: relative;
+    margin-left: 49px;
+    margin-bottom: 10px;
+}
+summary i
+{
+    position: absolute;
+    left: -30px;
+    color: rgb(0, 186, 188);
+    font-size: 18px;
+}
+.explaine_language_ather_language
+{
+    width: 100%;
+    color: #292d39;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.explaine_language_ather_language p
+{
+    direction:rtl;
+    font-family: 'Droid Arabic Kufi', serif;
+    text-align: justify;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+.explaine_language_ather_language:hover
+{
+    background-color: #f2f2f4;
+}
+.all_link_language
+{
+    background-color: rgba(0, 185, 188, 0.053);
+    display: flex;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+}
+.link_language
+{
+    width: 83.5%;
+    margin-left: 4%;
+    align-items: center;
+}
+.link_language i
+{
+    color: rgb(0, 186, 188);
+}
+.link_language p
+{
+    font-family: "FiraCode";
+    text-align:justify;
+    color:#292d39;
+    margin-bottom: 10px;
+}
+.link_language a
+{
+    display: block;
+    font-family: "FiraCode";
+    margin-left: 4%;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align:justify;
+}
+.link_language a:hover
+{
+    color: rgb(0, 186, 188);
+}
+.finish
 {
     display: flex;
-}
-.next_details
-{
+    justify-content: center;
+    align-items: center;
     width: 20%;
-    height: 100px;
-    background-color: red;
+    height: 85px;
 }
-details
+.finish input
 {
-    transition: height 1s ease;
-    overflow: hidden;
+    width: 90px;
+    height: 35px;
     font-family: "FiraCode";
-    letter-spacing: -1px;
-    box-sizing: border-box;
-    padding-left: 26px;
-    width: 92%;
-    display: inline;
-    background-color: #e9e9eb;
+    font-size: 12px;
+    border: 1px solid rgb(233, 233, 233);
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #ffffff;
+    transition: 0.5s;
+    /* margin-left: 20%; */
 }
-
-details:not([open])
+@media  (max-width: 800px)
 {
-    height: 1.25em;
-    display: inline;
+    .name_languages .caret
+    {
+        position: absolute;
+        left: 85%;
+        font-size: 22px;
+    }
 }
-
-details[open]
+@media  (max-width: 767px)
 {
-    height: 8.50em;
-    display: inline;
-}
-details p
-{
-    margin-top: 20px;
-    color: #292d39;
-    text-align: justify;
+    .name_languages .caret
+    {
+        position: absolute;
+        left: 85%;
+        font-size: 22px;
+    }
+    .all_link_language
+    {
+        flex-direction: column;
+        height:auto;
+    }
+    .link_language
+    {
+        margin-left: -7%;
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    .finish
+    {
+        width: 100%;
+    }
+    .finish input
+    {
+        margin-bottom: 20px;
+        width: 80%;
+        height: 40px;
+    }
 }
 @media  (max-width: 582px)
 {
     .name_languages .caret
-{
-    position: absolute;
-    left: 80%;
-    font-size: 22px;
-}
+    {
+        position: absolute;
+        left: 80%;
+        font-size: 22px;
+    }
 }
