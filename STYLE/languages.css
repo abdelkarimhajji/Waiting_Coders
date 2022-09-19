@@ -207,12 +207,19 @@ summary i
     height: 35px;
     font-family: "FiraCode";
     font-size: 12px;
-    border: 1px solid rgb(233, 233, 233);
+    border: 1px solid #ffffff;
     cursor: pointer;
-    background-color: #dc3545;
     color: #ffffff;
     transition: 0.5s;
     /* margin-left: 20%; */
+}
+.color_1
+{
+    background-color: #dc3545;
+}
+.color_2
+{
+    background-color: #28a745;
 }
 @media  (max-width: 800px)
 {
