@@ -30,6 +30,11 @@
     /* font Semi Bold */
     font-weight: 600;
 }
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
 *
 {
     padding: 0;

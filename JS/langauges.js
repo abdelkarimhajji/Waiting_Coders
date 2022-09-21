@@ -6,6 +6,7 @@ var body = document.getElementsByTagName("body")[0];
 var test;
 var valid = 1;
 // update color of input finished
+
 for(var i = 0; i < Finished; i++)
     {
         document.getElementsByClassName("Finished")[i].onclick = function()
@@ -20,12 +21,12 @@ for(var i = 0; i < Finished; i++)
 // begin function close and cofirm
 function closeModel() {
     model_confirm.style.display = "none";
-    body.style.overflow = "scroll"
+    body.style.overflow = "visible"
 }
 
 function changeColor() {
     closeModel();
-    body.style.overflow = "scroll"
+    body.style.overflow = "visible";
         if(test.style.backgroundColor == "rgb(220, 53, 69)")
         {
             test.style.backgroundColor = "rgb(40, 167, 69)";
@@ -34,7 +35,7 @@ function changeColor() {
 
 function notChange(){
     closeModel();
-    body.style.overflow = "scroll"
+    body.style.overflow = "visible"
     if(test.style.backgroundColor == "rgb(40, 167, 69)")
         {
             test.style.backgroundColor = "rgb(220, 53, 69)";
