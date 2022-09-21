@@ -237,7 +237,7 @@ summary i
 }
 #model_content
 {
-    width: 60%;
+    width: 70%;
     height: 200px;
     background-color: #ffffff;
     display: flex;
@@ -268,7 +268,7 @@ summary i
 {
     margin: 0 auto;
     font-family: "FiraCode";
-    width: 44%;
+    width: 50%;
     height: 34px;
     border: 1px solid white;
     color: #ffffff;
@@ -337,6 +337,50 @@ summary i
         margin-bottom: 20px;
         width: 80%;
         height: 40px;
+    }
+    /* begin model */
+    
+    #model_content
+    {
+        width: 95%;
+        height: 160px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid rgb(0, 186, 188);
+        position: relative;
+    }
+    #model_content p 
+    {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        font-family: "FiraCode";
+        font-weight: bold;
+        color: #292d39;
+        font-size: 18px;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    #input_model
+    {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #input_model input
+    {
+        margin: 0 auto;
+        font-family: "FiraCode";
+        width: 100%;
+        height: 34px;
+        border: 1px solid white;
+        color: #ffffff;
+        transition: 0.5s;
+        cursor: pointer;
     }
 }
 @media  (max-width: 582px)
