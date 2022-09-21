@@ -221,6 +221,85 @@ summary i
 {
     background-color: #28a745;
 }
+#model_confirm
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292d39c9;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#model_content
+{
+    width: 60%;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(0, 186, 188);
+    position: relative;
+}
+#model_content p 
+{
+    width: 100%;
+    text-align: center;
+    font-family: "FiraCode";
+    font-weight: bold;
+    color: #292d39;
+    font-size: 18px;
+    margin: 0 auto;
+}
+#input_model
+{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#input_model input
+{
+    margin: 0 auto;
+    font-family: "FiraCode";
+    width: 44%;
+    height: 34px;
+    border: 1px solid white;
+    color: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#input_model #no
+{
+    background-color: #dc3545;
+}
+#input_model #no:hover
+{
+    background-color: #861823;
+}
+#input_model #yes
+{
+    background-color: #28a745;
+}
+#input_model #yes:hover
+{
+    background-color: #186e2c;
+}
+#model_content i
+{
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    font-size: 23px;
+    color: #292d39;
+    cursor: pointer;
+}
 @media  (max-width: 800px)
 {
     .name_languages .caret

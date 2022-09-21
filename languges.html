@@ -154,6 +154,7 @@
                     <div class="name_languages">
                         <i class="fa-solid fa-arrow-down" style="display: inline;"></i><p style="display: inline;">Languages<i class="fa-solid fa-caret-down caret"></i></p>
                     </div>
+                    <!-- begin description -->
                     <div class="much_languages">
                         <summary><i class="fa-solid fa-caret-down caret"></i>1 - HTML5</summary>
                         <div class="explaine_language">
@@ -165,6 +166,8 @@
                                 مطوِّرو البرامج لجمع بياناتك ومشاركتها. قد تختلف خصوصية البيانات وممارسات الأمان حسب آلية استخدامك للتطبيق ومنطقتك وعمرك. يوفّر مطوِّر البرامج هذه المعلومات وقد يعدِّلها بمرور الوقت.</p>
                         </div>
                     </div>
+                    <!-- finish description -->
+                    <!-- begin link language -->
                     <div class="all_link_language">
                         <div class="link_language">
                             <p><i class="fa-solid fa-right-long"></i>&nbsp;&nbsp;First link to learn HTML5 : </p>
@@ -174,6 +177,8 @@
                             <input type="button" value="Finished"  class="Finished" style="background-color: #dc3545;"onclick="changeColor()">
                         </div>
                     </div>
+                    <!-- finish link languge -->
+                    <!-- begin link language -->
                     <div class="all_link_language">
                         <div class="link_language">
                             <p><i class="fa-solid fa-right-long"></i>&nbsp;&nbsp;First link to learn HTML5 : </p>
@@ -183,7 +188,22 @@
                             <input type="button" value="Finished" id="finished" class="Finished"style="background-color: #dc3545;"onclick="changeColor(This)">
                         </div>
                     </div>
+                    <!-- finish link languge -->
+                    <!-- Begin model confirm -->
+                    <div id="model_confirm">
+                        <div id="model_content">
+                            <p>
+                                Are you sure you finished this course ?
+                            </p>
+                            <div id="input_model">
+                                <input type="button" value="No" id="no" onclick="notChange()"><input type="button" value="yes"id="yes"onclick="changeColor()">
+                            </div>
+                            <i class="fa-solid fa-xmark" onclick="closeModel()"></i>
+                        </div>
+                    </div>
+                    <!-- finish model confirm -->
                 </div>
+                <!-- finish enter language -->
             </div>
             <!-- finish pages languages -->
         </div>
