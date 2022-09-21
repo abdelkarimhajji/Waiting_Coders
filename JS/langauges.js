@@ -6,7 +6,6 @@ var body = document.getElementsByTagName("body")[0];
 var test;
 var valid = 1;
 // update color of input finished
-
 for(var i = 0; i < Finished; i++)
     {
         document.getElementsByClassName("Finished")[i].onclick = function()
