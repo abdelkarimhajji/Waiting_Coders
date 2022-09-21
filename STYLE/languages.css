@@ -311,6 +311,12 @@ summary i
 }
 @media  (max-width: 767px)
 {
+    .enter_languages
+    {
+        width: 95%;
+        height: auto;  
+        background-color: #ffffff;
+    }
     .name_languages .caret
     {
         position: absolute;
