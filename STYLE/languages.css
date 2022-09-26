@@ -43,7 +43,7 @@
     width: 100%;
     height: 100px;
     z-index: 1;
-    background-color: #e9e9eb;
+    background-color: #f7f7f7;
 }
 .page_languges
 {
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e9e9eb;
+    background-color: #f7f7f7;
 }
 
 .enter_languages

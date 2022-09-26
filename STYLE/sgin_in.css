@@ -103,6 +103,7 @@ input
 {
     border: 2px solid rgb(0, 186, 188);
     outline: rgb(0, 186, 188);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
 }
 .form input[type = submit]
@@ -163,6 +164,14 @@ margin-top: 5%;
 cursor: pointer;
 font-family: "FiraCode";
 font-weight:normal;
+}
+.for_help p
+{
+    transition: 1s;
+}
+.for_help p:hover
+{
+    text-decoration: underline;
 }
  /* finsh style of div form */
  @media  (max-width: 500px)

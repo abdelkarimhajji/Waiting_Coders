@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="icon" href="IMAGES/WC.ico" type="image/icon type">
+    <link rel="icon" href="IMAGES/WC.ico" type="image/icon type">
     <link rel="stylesheet" href="STYLE/index.css">
+    <link rel="stylesheet" href="STYLE/projects.css">
     <link rel="stylesheet" href="STYLE/fontawesome/all.min.css">
     <link rel="stylesheet" href="STYLE/fontawesome/fontawesome.min.css">
-    <title>Waiting Coders</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- Begin nav1 -->
     <div id="navbar">
         <h1 onclick="burger()">WC</h1>
         <i class="fa-solid fa-arrow-right arrow" style="display: inline;"></i><p class="name_student">Abdelkarim Hajji</p>
         <div class="all_menu">
-            <a href="index.html"><div class="item_menu">
+                <a href="index.html"><div class="item_menu">
                     <div class="name_item">
                         <p>HOME</p>
                     </div>
@@ -40,14 +40,14 @@
                         <i class="fa-solid fa-globe"></i>
                     </div>
                 </div></a>
-                <a href="projects.html"><div class="item_menu">
+                <div class="item_menu">
                     <div class="name_item">
                         <p>PROJECTS</p>
                     </div>
                     <div class="icon_item" id="icon_item">
                         <i class="fa-solid fa-diagram-project"></i>
                     </div>
-                </div></a>
+                </div>
                 <div class="item_menu">
                     <div class="name_item">
                         <p>TOOLS</p>
@@ -86,7 +86,7 @@
             </div></a>
             <div class="item_menu">
                 <div class="name_item">
-                    <p>PROFILE</p>
+                    <p>PROJECTS</p>
                 </div>
                 <div class="icon_item" id="icon_item">
                     <i class="fa-solid fa-user"></i>
@@ -100,14 +100,14 @@
                     <i class="fa-solid fa-globe"></i>
                 </div>
             </div></a>
-            <a href="projects.html"><div class="item_menu">
+            <div class="item_menu">
                 <div class="name_item">
                     <p>PROJECTS</p>
                 </div>
                 <div class="icon_item" id="icon_item">
                     <i class="fa-solid fa-diagram-project"></i>
                 </div>
-            </div></a>
+            </div>
             <div class="item_menu">
                 <div class="name_item">
                     <p>TOOLS</p>
@@ -127,12 +127,12 @@
     </div>
     </div>
     <!-- finish nav 2 -->
-
-    <!-- Begin all_container -->
+     <!-- Begin all_container -->
     <div id="all_container">
         <!-- Begin fixed nav -->
         <div id="fixed_nav"></div>
         <!-- finish fixed nav -->
+
         <!-- Begin container -->
         <div id="container">
             <!-- Begin nav empty-->
@@ -143,94 +143,71 @@
                 <div class="nav_empty_3"><img src="IMAGES/ahajji.jpg" alt="" srcset=""></div>
             </div>
             <!-- finish nav empty -->
-            <!-- Begin container_ level -->
-            <div class="container_level">
-                <div class="level">
-                        <div class="profile_student">
-                            <img src="IMAGES/ahajji.jpg" alt="" srcset="">
-                        </div>
-                        <div class="name_progress">
-                            <select name="selct" id="select">
-                                <option value="Devlopemnt Web">Devlopemnt Web</option>
-                                <option value="Devlopemnt Web">Devlopemnt Application</option>
-                            </select>
-                        </div> 
-                        <div class="name_specific">
-                            <select name="selct" id="select">
-                                <option value="Devlopemnt Web">Front-End</option>
-                                <option value="Devlopemnt Web">Back-End</option>
-                            </select>
-                        </div>
-                        <div class="progress_level">
-                            <progress value="20" max="100"data-text="Level - 1%" id="progress"></progress>
-                        </div>
-                    
-                </div>
+            <!-- begin nav cover -->
+            <div class="cover">
+                <div></div>
             </div>
-            <div class="all_Established">
-                <div class="flex_1_Established">
-                    <div class="languges">
-                        <div class="title_langauges">
-                            <i class="fa-solid fa-caret-down caret"></i><i class="fa-solid fa-arrow-right"></i><p style="display: inline;">Languages</p>
-                        </div>
-                        <div class="names_languages">
-                            <a href="languges.html#html5"><p><i class="fa-regular fa-hand-pointer"></i><span>1 - </span>HTML5</p></a>
-                            <a href="languges.html#css3"><p><i class="fa-regular fa-hand-pointer"></i><span>2 - </span>CSS3</p></a>
-                            <a href="languges.html#javascript"><p><i class="fa-regular fa-hand-pointer"></i><span>3 - </span>JAVASCRIPT</p></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <div class="title_projects">
-                            <i class="fa-solid fa-caret-down caret"></i><i class="fa-solid fa-arrow-right"></i><p style="display: inline;">Projects</p>
-                        </div>
-                        <div class="names_projects">
-                            <p><i class="fa-regular fa-hand-pointer"></i><span>1 - </span>HTML5</p>
-                            <p><i class="fa-regular fa-hand-pointer"></i><span>2 - </span>CSS</p>
-                            <p><i class="fa-regular fa-hand-pointer"></i><span>3 - </span>JAVASCRIPT</p>
-                        </div>
-                    </div>
+            <!-- finish nav cover -->
+            <!-- begin all projects -->
+            <div class="all_projects">
+                <div class="my_projects">
+                    <p><i class="fa-solid fa-arrow-right"></i> &nbsp; My Projects.</p>
                 </div>
-                <!-- Begin tools -->
-                    <div class="contain_tools">
-                        <div class="tools">
-                            <div class="title_tools">
-                                <i class="fa-solid fa-caret-down caret"></i><i class="fa-solid fa-arrow-right"></i><p style="display: inline;">Tools</p>
+                <!-- begin conatine cards -->
+                <div class="containe_cards">
+                    <!-- Begin projects -->
+                    <div class="card_projects">
+                        <div class="containe_img">
+                            <img src="IMAGES/biographie.png" alt="biographie"  width="100%">
+                            <div class="containe_i" id="containe_i">
+                                <i class="fa-solid fa-ellipsis-vertical i_event"></i>
                             </div>
-                            <div class="names_projects">
-                                <p><i class="fa-regular fa-hand-pointer"></i><span>1 - </span>Visual Stodio</p>
-                                <p><i class="fa-regular fa-hand-pointer"></i><span>2 - </span>Figma</p>
-                                <p><i class="fa-regular fa-hand-pointer"></i><span>3 - </span>Githup</p>
-                            </div>
+                            <p class="option">see you letter</p>
+                        </div>
+                        <div class="containe_description">
+                            <h2 >Réaliser une Biographie d'un personnage qui vous inspire</h2>
+                            <p>Il s’agit de réaliser une page web qui présente la biographie d’un personnage de votre choix 
+                                (sportif, scientifique, artiste…) en utilisant HTML5 et CSS3 ;</p>
                         </div>
                     </div>
-            </div>
-            <!-- footer -->
-            <div class="all_footer">
-                <div class="footer">
-                    <div class="names_footer_1">
-                        <p>Edit informations</p>
-                        <p>Portability requests</p>
-                        <p class="p_1">Anonymization requests</p>
+                    <!-- finish projects -->
+                    <!-- Begin projects -->
+                    <div class="card_projects">
+                        <div class="containe_img">
+                            <img src="IMAGES/biographie.png" alt="biographie"  width="100%">
+                            <div class="containe_i" id="containe_i">
+                                <i class="fa-solid fa-ellipsis-vertical i_event"></i>
+                            </div>
+                            <p class="option">see you letter</p>
+                        </div>
+                        <div class="containe_description">
+                            <h2 >Réaliser une Biographie d'un personnage qui vous inspire</h2>
+                            <p>Il s’agit de réaliser une page web qui présente la biographie d’un personnage de votre choix
+                                (sportif, scientifique, artiste…) en utilisant HTML5 et CSS3 ;</p>
+                        </div>
                     </div>
-                    <div class="names_footer_2">
-                        <p class="p_2">Anonymization requests</p>
-                        <p>I have a problem</p>
+                    <!-- finish projects -->
+                    <!-- Begin projects -->
+                    <div class="card_projects">
+                        <div class="containe_img">
+                            <img src="IMAGES/biographie.png" alt="biographie"  width="100%">
+                            <div class="containe_i" id="containe_i">
+                                <i class="fa-solid fa-ellipsis-vertical i_event"></i>
+                            </div>
+                            <p class="option">see you letter</p>
+                        </div>
+                        <div class="containe_description">
+                            <h2 >Réaliser une Biographie d'un personnage qui vous inspire</h2>
+                            <p>Il s’agit de réaliser une page web qui présente la biographie d’un personnage de votre choix 
+                                (sportif, scientifique, artiste…) en utilisant HTML5 et CSS3 ;</p>
+                        </div>
                     </div>
-                </div>
-                <div class="last_footer">
-                    <p>Terms of use for video surveillance</p>
-                    <p>Rules of procedure</p>
-                    <p>Declaration on the use of cookies</p>
-                    <p>General term of use of the site</p>
-                    <p>Legal notices</p>
-                    <p>Privacy policy</p>
-                </div>
+                    <!-- finish projects -->
             </div>
-            <!-- finish container_level -->
+            <!-- finish all projects -->
         </div>
-        <!-- finish container -->
     </div>
-    <!-- finish all_container -->
+    <script src="JS/projects.js"></script>
     <script src="JS/index.js"></script>
 </body>
 </html>
